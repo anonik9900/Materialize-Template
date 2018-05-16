@@ -1,0 +1,13 @@
+// Only necessary for window height sized blocks.
+html, body {
+  height: 100%;
+}
+
+
+a:hover {
+color: red;
+}
+
+a{
+  color: white;
+}
