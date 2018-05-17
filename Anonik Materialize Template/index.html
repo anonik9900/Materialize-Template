@@ -4,40 +4,68 @@
     <meta charset="utf-8">
     <title>My GTA V Mods</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link href="widget/github-widget.css" rel="stylesheet" type="text/css" />
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <link href="favicon.png" rel="shortcut icon" />
+    <script type="text/javascript">
+    /*
+    jQuery Scroll to ID
+    */
+    function scroll_to(id) {
+    $('html,body').animate({
+    scrollTop: $('#'+id).offset().top
+    },'slow');
+    }
+    </script>
 
 <style>
 
 .parallax {
-    /* The image used */
-    background-image: url("parallax2.jpg");
+/* The image used */
+background-image: url("images/parallax2.jpg");
 
-    /* Set a specific height */
-    min-height: 500px;
+/* Set a specific height */
+min-height: 500px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax2 {
-    /* The image used */
-background-image: url("parallax1.jpg");
-
-    /* Set a specific height */
-height: 500px;
-
-    /* Create the parallax scrolling effect */
+/* Create the parallax scrolling effect */
 background-attachment: fixed;
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 }
+
+.parallax2 {
+/* The image used */
+background-image: url("images/parallax1.jpg");
+
+/* Set a specific height */
+height: 450px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+.parallax3 {
+/* The image used */
+background-image: url("images/parallax3.jpg");
+
+/* Set a specific height */
+height: 400px;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
 </style>
 
   </head>
@@ -52,7 +80,9 @@ background-size: cover;
     <ul class="left hide-on-med-and-down">
       <li class="active"><a href="index.html">Home</a></li>
       <li><a href="">GTA 5 Mods</a></li>
-      <li><a href="">LSPDFR Mods</a></li> <!--class="active"-->
+      <li><a href="">LSPDFR Mods</a></li>
+      <li><span onclick="scroll_to('github')"><a>Github Repository</a></li> <!--class="active"-->
+      <li><span onclick="scroll_to('skill')"><a>Le mie Competenze</a></span></li>
     </ul>
   </div>
 </nav>
@@ -103,7 +133,71 @@ background-size: cover;
   </p>
 </div>
 
+<!-- Github page -->
+
+<div id="github">
 <div class="parallax2"></div>
+  <div class="container">
+      <div align="center">
+      <h3>My Github Repository </h3>
+    </div>
+    <div class="github-widget" data-user="anonik9900"></div>
+  </div>
+</div>
+<!-- End -->
+
+
+
+<!--Parallax 3 & Skill -->
+
+
+<div id ="skill">
+  <div class="parallax3"><h1 class="parl3">Skill</h1></div>
+  <div class="container">
+    <p>HTML</p>
+<div class="container2">
+  <div class="skills html">90%</div>
+</div>
+
+<p>CSS</p>
+<div class="container2">
+  <div class="skills css">80%</div>
+</div>
+
+<p>C++</p>
+<div class="container2">
+  <div class="skills cpp">70%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container2">
+  <div class="skills js">65%</div>
+</div>
+
+<p>Batch</p>
+<div class="container2">
+  <div class="skills batch">40%</div>
+</div>
+
+<p>C#</p>
+<div class="container2">
+  <div class="skills csharp">30%</div>
+</div>
+
+<p>PHP</p>
+<div class="container2">
+  <div class="skills php">10%</div>
+</div>
+
+
+
+<br><br>
+  </div>
+</div>
+
+<!--Fine -->
+
+
 
 
 
@@ -136,5 +230,7 @@ background-size: cover;
 </footer>
 <!-- Fine Footer-->
 
+
+<script src="widget/github-widget.min.js"></script> <!-- Github Widget script -->
   </body>
 </html>
